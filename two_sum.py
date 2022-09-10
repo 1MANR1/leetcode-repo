@@ -18,7 +18,7 @@ def twoSum(nums, target):
     return sum_digets
 
 
-test_1 = twoSum([2,7, 11, 15], 18)
+test_1 = twoSum([2, 7, 11, 15], 18)
 print(test_1)
                  
         
