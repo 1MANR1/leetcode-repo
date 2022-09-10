@@ -1,2 +1,1 @@
-# Two Sum
-A leet code problem solution.
+# Leetcode problem solutions.
