@@ -35,8 +35,7 @@ class two_sum:
 my_test = two_sum([2,7,11,15], 22)
 print(my_test.two_sum_fun())
 
-       
-        
+
         
 
 
