@@ -21,7 +21,7 @@ class two_sum:
                         self.answer.append(self.k)
                         self.answer.append(self.i)
                         active = False
-                        return self.answer 
+                        return self.answer
                     else:
                         self.sum = self.list[self.i]
                         j += 1
@@ -40,4 +40,3 @@ print(my_test.two_sum_fun())
 
 
     
-        
