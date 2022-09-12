@@ -7,7 +7,6 @@ class Solution:
         self.i = 0
         self.my_range = len(self.list) - 1
         self.k = 1
-        j = 1
         active = True
         while active:
             for self.i in range(len(self.list)):
@@ -22,7 +21,6 @@ class Solution:
                                 return self.answer[::-1]
                         else:
                             self.sum = self.list[self.i]
-                            j += 1
                 else:
                     self.sum = 0      
 
