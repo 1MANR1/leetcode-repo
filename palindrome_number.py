@@ -13,8 +13,7 @@ class Solution(object):
         for num in self.my_string:
             self.list.append(num)
         
-        for num in self.list:
-            self.reverse_list = self.list[::-1]
+        self.reverse_list = self.list[::-1]
             
         if self.list == self.reverse_list:
             return True
