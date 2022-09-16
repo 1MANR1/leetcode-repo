@@ -15,4 +15,4 @@ class Solution(object):
         return self.asnwers
 
 my_test = Solution()
-print(my_test.mergeTwoLists(list1 = [1 ,2, 4], list2 = [1, 3, 5]))
+print(my_test.mergeTwoLists(list1 = [1 ,2, 4], list2 = [1, 3, 7]))
