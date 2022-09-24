@@ -1,94 +1,27 @@
 class Solution(object):
     def isValid(self, s):
-        
+
         self.s = s
-        self.list = []
-        self.index = ''
-        self.i = ''
-        self.j = ''
-        active = True
-        self.place_holder = ''
+        self.parantheses = {'(': ')', '[': ']', '{': '}'}
         self.answers = []
-        self.answer = ''
-        
 
-        for self.index in self.s:
-            self.list.append(self.index)
-
-        print(self.list)
-
-        while active:
-            for self.i in self.list:
-                self.place_holder = self.i
-                
-                if self.place_holder == '(':
-
-                    for self.j in self.list:
-
-                        if self.j == ')':
-                            self.answers.append('True') 
-                            break
-                    else:
-                            self.answers.append('False')
-                elif self.place_holder == ')':
-
-                    for self.j in self.list:
-
-                        if self.j == '(':
-                            self.answers.append('True')
-                            break
-                    else:
-                        self.answers.append('False')
-                elif self.place_holder == '[': 
-
-                    for self.j in self.list:
-
-                        if self.j == ']':
-                            self.answers.append('True')
-                            break
-                    else:
-                        self.answers.append('False')            
-                elif self.place_holder == ']':  
-
-                    for self.j in self.list:
-
-                        if self.j == '[':
-                            self.answers.append('True')
-                            break
-                    else:
-                        self.answers.append('False') 
-                elif self.place_holder == '{':  
-
-                    for self.j in self.list:
-
-                        if self.j == '}':
-                            self.answers.append('True')
-                            break
-                    else:
-                        self.answers.append('False') 
-                elif self.place_holder == '}': 
-
-                    for self.j in self.list:
-
-                        if self.j == '{':
-                            self.answers.append('True')
-                            break
-                    else:
-                        self.answers.append('False') 
+        for k in self.parantheses:
+            if k in self.s:
+                if self.parantheses[k] in self.s:
+                    self.answers.append('True')
                 else:
                     self.answers.append('False')
-                    active = False    
-            else:
-                active = False
 
-        for self.answer in self.answers:
-            if self.answer != 'True':
+        for answer in self.answers:
+            if answer != 'True':
                 return False
-
-        return True
+        else:
+            return True
 
 
 my_test = Solution()
-print(my_test.isValid('[)}'))
+print(my_test.isValid('[(])'))
+
+
 
 
