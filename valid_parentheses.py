@@ -21,3 +21,7 @@ class Solution(object):
 
 my_test = Solution()
 print(my_test.isValid('[(])'))
+
+
+
+
