@@ -18,7 +18,6 @@ class Solution(object):
         else:
             return True
 
-
 my_test = Solution()
 print(my_test.isValid('[(])'))
 
